@@ -21,7 +21,7 @@ export async function loginUser(email: string, password: string) {
     return { success: false, message: "Invalid credentials" };
   }
 
-  // ✅ Writable cookies in server action
+  // Set HTTP-only cookie
   const cookieStore = await cookies();
   cookieStore.set("my-user", user.username, {
     httpOnly: true,
