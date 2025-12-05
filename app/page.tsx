@@ -15,6 +15,11 @@ export default function SignupPage() {
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     const res = await createUser(form);
+    setForm({
+      username: "",
+      email: "",
+      password: "",
+    });
     console.log(res);
   }
 
@@ -23,7 +28,6 @@ export default function SignupPage() {
       <h1 className="text-xl font-bold">Create User</h1>
 
       <form onSubmit={onSubmit} className="space-y-4">
-
         <Input
           placeholder="Username"
           value={form.username}

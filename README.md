@@ -16,3 +16,15 @@ the object should contain
 5. error handling to test whether it has error or not "if" condition only
 6. return the response success if there is no error
 ----------------------------------------------------------------------------------
+
+
+CLIENT SIDE
+----------------------------------------------------------------------------------
+1. import 2 object useState and async function in Server Action
+2. initialize useState for handling form
+3. create async function for submit and it has parameter form event built in type in react
+4. make const object destructure and await calls the server function name and
+put inside parameter is the current state
+5. make sure not reloaded using prevent default & clear form after submission
+6. return the response after submit (if it have an error or not)
+----------------------------------------------------------------------------------
