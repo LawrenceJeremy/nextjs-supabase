@@ -28,3 +28,13 @@ put inside parameter is the current state
 5. make sure not reloaded using prevent default & clear form after submission
 6. return the response after submit (if it have an error or not)
 ----------------------------------------------------------------------------------
+
+SAMPLE ANALOGY
+----------------------------------------------------------------------------------
+1. setup supabaseClient 
+2. create define types 
+3. create crud function with type annotation parameter 
+4. object destruction 
+5. handling error 
+6. return function to success
+----------------------------------------------------------------------------------
